@@ -698,16 +698,16 @@
 </span><span id="L-465"><a href="#L-465"><span class="linenos">465</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-466"><a href="#L-466"><span class="linenos">466</span></a><span class="sd">    Diffusion model parameters.</span>
 </span><span id="L-467"><a href="#L-467"><span class="linenos">467</span></a>
-</span><span id="L-468"><a href="#L-468"><span class="linenos">468</span></a><span class="sd">    :ivar float flow_source_stdev: standard deviation of flow source</span>
-</span><span id="L-469"><a href="#L-469"><span class="linenos">469</span></a><span class="sd">    :ivar float timestep: time step (dt) in seconds</span>
-</span><span id="L-470"><a href="#L-470"><span class="linenos">470</span></a><span class="sd">    :ivar int num_initial_mesh_refinements: number of initial mesh refinements</span>
-</span><span id="L-471"><a href="#L-471"><span class="linenos">471</span></a><span class="sd">    :ivar int num_hydraulic_radius_refinements: number of mesh refinements for hydraulic radius</span>
-</span><span id="L-472"><a href="#L-472"><span class="linenos">472</span></a><span class="sd">    :ivar int num_source_refinements: number of mesh refinements for sources</span>
-</span><span id="L-473"><a href="#L-473"><span class="linenos">473</span></a><span class="sd">    :ivar float rock_compressibility: rock compressibility (cr), in Pa^-1</span>
-</span><span id="L-474"><a href="#L-474"><span class="linenos">474</span></a><span class="sd">    :ivar float gravity: gravity (g), in m/s^2</span>
-</span><span id="L-475"><a href="#L-475"><span class="linenos">475</span></a><span class="sd">    :ivar float dt_max: maximum time step in seconds. Defaults to 50x the timestep period.</span>
-</span><span id="L-476"><a href="#L-476"><span class="linenos">476</span></a><span class="sd">    :ivar float boundary_conditions_tolerance: tolerance for boundary conditions in meters</span>
-</span><span id="L-477"><a href="#L-477"><span class="linenos">477</span></a><span class="sd">    :ivar boundary_points: number of points on the boundary</span>
+</span><span id="L-468"><a href="#L-468"><span class="linenos">468</span></a><span class="sd">    :param float flow_source_stdev: standard deviation of flow source</span>
+</span><span id="L-469"><a href="#L-469"><span class="linenos">469</span></a><span class="sd">    :param float timestep: time step (dt) in seconds</span>
+</span><span id="L-470"><a href="#L-470"><span class="linenos">470</span></a><span class="sd">    :param int num_initial_mesh_refinements: number of initial mesh refinements</span>
+</span><span id="L-471"><a href="#L-471"><span class="linenos">471</span></a><span class="sd">    :param int num_hydraulic_radius_refinements: number of mesh refinements for hydraulic radius</span>
+</span><span id="L-472"><a href="#L-472"><span class="linenos">472</span></a><span class="sd">    :param int num_source_refinements: number of mesh refinements for sources</span>
+</span><span id="L-473"><a href="#L-473"><span class="linenos">473</span></a><span class="sd">    :param float rock_compressibility: rock compressibility (cr), in Pa^-1</span>
+</span><span id="L-474"><a href="#L-474"><span class="linenos">474</span></a><span class="sd">    :param float gravity: gravity (g), in m/s^2</span>
+</span><span id="L-475"><a href="#L-475"><span class="linenos">475</span></a><span class="sd">    :param float dt_max: maximum time step in seconds. Defaults to 50x the timestep period.</span>
+</span><span id="L-476"><a href="#L-476"><span class="linenos">476</span></a><span class="sd">    :param float boundary_conditions_tolerance: tolerance for boundary conditions in meters</span>
+</span><span id="L-477"><a href="#L-477"><span class="linenos">477</span></a><span class="sd">    :param boundary_points: number of points on the boundary</span>
 </span><span id="L-478"><a href="#L-478"><span class="linenos">478</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="L-479"><a href="#L-479"><span class="linenos">479</span></a>
 </span><span id="L-480"><a href="#L-480"><span class="linenos">480</span></a>    <span class="n">flow_source_stdev</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mf">100.0</span><span class="p">)</span>
@@ -1978,16 +1978,16 @@ user overloads eval or eval_cell</p>
 </span><span id="DiffusionModelMPParams-466"><a href="#DiffusionModelMPParams-466"><span class="linenos">466</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="DiffusionModelMPParams-467"><a href="#DiffusionModelMPParams-467"><span class="linenos">467</span></a><span class="sd">    Diffusion model parameters.</span>
 </span><span id="DiffusionModelMPParams-468"><a href="#DiffusionModelMPParams-468"><span class="linenos">468</span></a>
-</span><span id="DiffusionModelMPParams-469"><a href="#DiffusionModelMPParams-469"><span class="linenos">469</span></a><span class="sd">    :ivar float flow_source_stdev: standard deviation of flow source</span>
-</span><span id="DiffusionModelMPParams-470"><a href="#DiffusionModelMPParams-470"><span class="linenos">470</span></a><span class="sd">    :ivar float timestep: time step (dt) in seconds</span>
-</span><span id="DiffusionModelMPParams-471"><a href="#DiffusionModelMPParams-471"><span class="linenos">471</span></a><span class="sd">    :ivar int num_initial_mesh_refinements: number of initial mesh refinements</span>
-</span><span id="DiffusionModelMPParams-472"><a href="#DiffusionModelMPParams-472"><span class="linenos">472</span></a><span class="sd">    :ivar int num_hydraulic_radius_refinements: number of mesh refinements for hydraulic radius</span>
-</span><span id="DiffusionModelMPParams-473"><a href="#DiffusionModelMPParams-473"><span class="linenos">473</span></a><span class="sd">    :ivar int num_source_refinements: number of mesh refinements for sources</span>
-</span><span id="DiffusionModelMPParams-474"><a href="#DiffusionModelMPParams-474"><span class="linenos">474</span></a><span class="sd">    :ivar float rock_compressibility: rock compressibility (cr), in Pa^-1</span>
-</span><span id="DiffusionModelMPParams-475"><a href="#DiffusionModelMPParams-475"><span class="linenos">475</span></a><span class="sd">    :ivar float gravity: gravity (g), in m/s^2</span>
-</span><span id="DiffusionModelMPParams-476"><a href="#DiffusionModelMPParams-476"><span class="linenos">476</span></a><span class="sd">    :ivar float dt_max: maximum time step in seconds. Defaults to 50x the timestep period.</span>
-</span><span id="DiffusionModelMPParams-477"><a href="#DiffusionModelMPParams-477"><span class="linenos">477</span></a><span class="sd">    :ivar float boundary_conditions_tolerance: tolerance for boundary conditions in meters</span>
-</span><span id="DiffusionModelMPParams-478"><a href="#DiffusionModelMPParams-478"><span class="linenos">478</span></a><span class="sd">    :ivar boundary_points: number of points on the boundary</span>
+</span><span id="DiffusionModelMPParams-469"><a href="#DiffusionModelMPParams-469"><span class="linenos">469</span></a><span class="sd">    :param float flow_source_stdev: standard deviation of flow source</span>
+</span><span id="DiffusionModelMPParams-470"><a href="#DiffusionModelMPParams-470"><span class="linenos">470</span></a><span class="sd">    :param float timestep: time step (dt) in seconds</span>
+</span><span id="DiffusionModelMPParams-471"><a href="#DiffusionModelMPParams-471"><span class="linenos">471</span></a><span class="sd">    :param int num_initial_mesh_refinements: number of initial mesh refinements</span>
+</span><span id="DiffusionModelMPParams-472"><a href="#DiffusionModelMPParams-472"><span class="linenos">472</span></a><span class="sd">    :param int num_hydraulic_radius_refinements: number of mesh refinements for hydraulic radius</span>
+</span><span id="DiffusionModelMPParams-473"><a href="#DiffusionModelMPParams-473"><span class="linenos">473</span></a><span class="sd">    :param int num_source_refinements: number of mesh refinements for sources</span>
+</span><span id="DiffusionModelMPParams-474"><a href="#DiffusionModelMPParams-474"><span class="linenos">474</span></a><span class="sd">    :param float rock_compressibility: rock compressibility (cr), in Pa^-1</span>
+</span><span id="DiffusionModelMPParams-475"><a href="#DiffusionModelMPParams-475"><span class="linenos">475</span></a><span class="sd">    :param float gravity: gravity (g), in m/s^2</span>
+</span><span id="DiffusionModelMPParams-476"><a href="#DiffusionModelMPParams-476"><span class="linenos">476</span></a><span class="sd">    :param float dt_max: maximum time step in seconds. Defaults to 50x the timestep period.</span>
+</span><span id="DiffusionModelMPParams-477"><a href="#DiffusionModelMPParams-477"><span class="linenos">477</span></a><span class="sd">    :param float boundary_conditions_tolerance: tolerance for boundary conditions in meters</span>
+</span><span id="DiffusionModelMPParams-478"><a href="#DiffusionModelMPParams-478"><span class="linenos">478</span></a><span class="sd">    :param boundary_points: number of points on the boundary</span>
 </span><span id="DiffusionModelMPParams-479"><a href="#DiffusionModelMPParams-479"><span class="linenos">479</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="DiffusionModelMPParams-480"><a href="#DiffusionModelMPParams-480"><span class="linenos">480</span></a>
 </span><span id="DiffusionModelMPParams-481"><a href="#DiffusionModelMPParams-481"><span class="linenos">481</span></a>    <span class="n">flow_source_stdev</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mf">100.0</span><span class="p">)</span>
@@ -2005,16 +2005,20 @@ user overloads eval or eval_cell</p>
 
             <div class="docstring"><p>Diffusion model parameters.</p>
 
-<p>:ivar float flow_source_stdev: standard deviation of flow source
-:ivar float timestep: time step (dt) in seconds
-:ivar int num_initial_mesh_refinements: number of initial mesh refinements
-:ivar int num_hydraulic_radius_refinements: number of mesh refinements for hydraulic radius
-:ivar int num_source_refinements: number of mesh refinements for sources
-:ivar float rock_compressibility: rock compressibility (cr), in Pa^-1
-:ivar float gravity: gravity (g), in m/s^2
-:ivar float dt_max: maximum time step in seconds. Defaults to 50x the timestep period.
-:ivar float boundary_conditions_tolerance: tolerance for boundary conditions in meters
-:ivar boundary_points: number of points on the boundary</p>
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>float flow_source_stdev</strong>:  standard deviation of flow source</li>
+<li><strong>float timestep</strong>:  time step (dt) in seconds</li>
+<li><strong>int num_initial_mesh_refinements</strong>:  number of initial mesh refinements</li>
+<li><strong>int num_hydraulic_radius_refinements</strong>:  number of mesh refinements for hydraulic radius</li>
+<li><strong>int num_source_refinements</strong>:  number of mesh refinements for sources</li>
+<li><strong>float rock_compressibility</strong>:  rock compressibility (cr), in Pa^-1</li>
+<li><strong>float gravity</strong>:  gravity (g), in m/s^2</li>
+<li><strong>float dt_max</strong>:  maximum time step in seconds. Defaults to 50x the timestep period.</li>
+<li><strong>float boundary_conditions_tolerance</strong>:  tolerance for boundary conditions in meters</li>
+<li><strong>boundary_points</strong>:  number of points on the boundary</li>
+</ul>
 </div>
 
 
