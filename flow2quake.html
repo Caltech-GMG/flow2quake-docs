@@ -134,7 +134,11 @@
 flow2quake    </h1>
 
                         <div class="docstring"><p>Flow2Quake is a package for building composable pipelines to model seismicity 
-in natural gas and CCS reservoirs. Examples of how Flow2Quake is used include:</p>
+in natural gas and CCS reservoirs. </p>
+
+<p><img src="https://caltechsites-prod.s3.amazonaws.com/gmg/images/Screenshot_Mateo-Groningen.original.png" width="600px" /></p>
+
+<p>Examples of how Flow2Quake is used include:</p>
 
 <ul>
 <li>Forecasting reservoir surface subsidence based on past injection data and reservoir properties</li>
@@ -148,21 +152,25 @@ in natural gas and CCS reservoirs. Examples of how Flow2Quake is used include:</
 
                         <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos"> 1</span></a><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a><span class="sd">Flow2Quake is a package for building composable pipelines to model seismicity </span>
-</span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a><span class="sd">in natural gas and CCS reservoirs. Examples of how Flow2Quake is used include:</span>
+</span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a><span class="sd">in natural gas and CCS reservoirs. </span>
 </span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a>
-</span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="sd">- Forecasting reservoir surface subsidence based on past injection data and reservoir properties</span>
-</span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="sd">- Modeling well injection feedback-control strategies based on seismic risk</span>
-</span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="sd">&lt;img src=&quot;https://caltechsites-prod.s3.amazonaws.com/gmg/images/Screenshot_Mateo-Groningen.original.png&quot; width=&quot;600px&quot; /&gt;</span>
+</span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a>
+</span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="sd">Examples of how Flow2Quake is used include:</span>
 </span><span id="L-8"><a href="#L-8"><span class="linenos"> 8</span></a>
-</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a><span class="kn">from</span> <span class="nn">.base</span> <span class="kn">import</span> <span class="n">Reservoir</span>
-</span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a><span class="kn">from</span> <span class="nn">.units</span> <span class="kn">import</span> <span class="n">DAY</span><span class="p">,</span> <span class="n">MINUTE</span><span class="p">,</span> <span class="n">HOUR</span><span class="p">,</span> <span class="n">YEAR</span>
-</span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a>
-</span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a><span class="n">submodules</span> <span class="o">=</span> <span class="p">[</span>
-</span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a>    <span class="s2">&quot;diffusion&quot;</span><span class="p">,</span>
-</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a>    <span class="s2">&quot;mechanical&quot;</span><span class="p">,</span>
-</span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a>    <span class="s2">&quot;seismicity&quot;</span><span class="p">,</span>
-</span><span id="L-16"><a href="#L-16"><span class="linenos">16</span></a><span class="p">]</span>
-</span><span id="L-17"><a href="#L-17"><span class="linenos">17</span></a><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Reservoir&quot;</span><span class="p">,</span> <span class="s2">&quot;DAY&quot;</span><span class="p">,</span> <span class="s2">&quot;MINUTE&quot;</span><span class="p">,</span> <span class="s2">&quot;HOUR&quot;</span><span class="p">,</span> <span class="s2">&quot;YEAR&quot;</span><span class="p">,</span> <span class="o">*</span><span class="n">submodules</span><span class="p">]</span>
+</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a><span class="sd">- Forecasting reservoir surface subsidence based on past injection data and reservoir properties</span>
+</span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a><span class="sd">- Modeling well injection feedback-control strategies based on seismic risk</span>
+</span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a>
+</span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a><span class="kn">from</span> <span class="nn">.base</span> <span class="kn">import</span> <span class="n">Reservoir</span>
+</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a><span class="kn">from</span> <span class="nn">.units</span> <span class="kn">import</span> <span class="n">DAY</span><span class="p">,</span> <span class="n">MINUTE</span><span class="p">,</span> <span class="n">HOUR</span><span class="p">,</span> <span class="n">YEAR</span>
+</span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a>
+</span><span id="L-16"><a href="#L-16"><span class="linenos">16</span></a><span class="n">submodules</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="L-17"><a href="#L-17"><span class="linenos">17</span></a>    <span class="s2">&quot;diffusion&quot;</span><span class="p">,</span>
+</span><span id="L-18"><a href="#L-18"><span class="linenos">18</span></a>    <span class="s2">&quot;mechanical&quot;</span><span class="p">,</span>
+</span><span id="L-19"><a href="#L-19"><span class="linenos">19</span></a>    <span class="s2">&quot;seismicity&quot;</span><span class="p">,</span>
+</span><span id="L-20"><a href="#L-20"><span class="linenos">20</span></a><span class="p">]</span>
+</span><span id="L-21"><a href="#L-21"><span class="linenos">21</span></a><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Reservoir&quot;</span><span class="p">,</span> <span class="s2">&quot;DAY&quot;</span><span class="p">,</span> <span class="s2">&quot;MINUTE&quot;</span><span class="p">,</span> <span class="s2">&quot;HOUR&quot;</span><span class="p">,</span> <span class="s2">&quot;YEAR&quot;</span><span class="p">,</span> <span class="o">*</span><span class="n">submodules</span><span class="p">]</span>
 </span></pre></div>
 
 
@@ -179,51 +187,51 @@ in natural gas and CCS reservoirs. Examples of how Flow2Quake is used include:</
 
     </div>
     <a class="headerlink" href="#Reservoir"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Reservoir-32"><a href="#Reservoir-32"><span class="linenos">32</span></a><span class="nd">@dataclass</span>
-</span><span id="Reservoir-33"><a href="#Reservoir-33"><span class="linenos">33</span></a><span class="k">class</span> <span class="nc">Reservoir</span><span class="p">:</span>
-</span><span id="Reservoir-34"><a href="#Reservoir-34"><span class="linenos">34</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Reservoir-35"><a href="#Reservoir-35"><span class="linenos">35</span></a><span class="sd">    Class describing geometry &amp; material properties for a single reservoir.</span>
-</span><span id="Reservoir-36"><a href="#Reservoir-36"><span class="linenos">36</span></a>
-</span><span id="Reservoir-37"><a href="#Reservoir-37"><span class="linenos">37</span></a><span class="sd">    1. `*_points` params are the coordinates of the points in the reservoir, e.g.</span>
-</span><span id="Reservoir-38"><a href="#Reservoir-38"><span class="linenos">38</span></a><span class="sd">        `np.array([[x1, y1], [x2, y2], ...])`</span>
-</span><span id="Reservoir-39"><a href="#Reservoir-39"><span class="linenos">39</span></a><span class="sd">    2. `*_field` params are the values of the field at the points, e.g.</span>
-</span><span id="Reservoir-40"><a href="#Reservoir-40"><span class="linenos">40</span></a><span class="sd">        `np.array([val1, val2, ...])`</span>
-</span><span id="Reservoir-41"><a href="#Reservoir-41"><span class="linenos">41</span></a><span class="sd">    3. These values are then interpolated for the entire reservoir area.</span>
-</span><span id="Reservoir-42"><a href="#Reservoir-42"><span class="linenos">42</span></a>
-</span><span id="Reservoir-43"><a href="#Reservoir-43"><span class="linenos">43</span></a><span class="sd">    :param list[tuple[float, float]] outline_points: points defining the reservoir outline. DO NOT repeat the first point at the end of the list.</span>
-</span><span id="Reservoir-44"><a href="#Reservoir-44"><span class="linenos">44</span></a><span class="sd">    :param np.ndarray depth_points: points defining the reservoir depth (distance from surface to bottom)</span>
-</span><span id="Reservoir-45"><a href="#Reservoir-45"><span class="linenos">45</span></a><span class="sd">    :param np.ndarray depth_field: depth field at the points</span>
-</span><span id="Reservoir-46"><a href="#Reservoir-46"><span class="linenos">46</span></a><span class="sd">    :param np.ndarray thickness_points: points defining the reservoir thickness (distance to top from depth)</span>
-</span><span id="Reservoir-47"><a href="#Reservoir-47"><span class="linenos">47</span></a><span class="sd">    :param np.ndarray thickness_field: thickness values at respective points</span>
-</span><span id="Reservoir-48"><a href="#Reservoir-48"><span class="linenos">48</span></a><span class="sd">    :param np.ndarray porosity_points: points defining the reservoir porosity</span>
-</span><span id="Reservoir-49"><a href="#Reservoir-49"><span class="linenos">49</span></a><span class="sd">    :param np.ndarray porosity_field: porosity values at respective points</span>
-</span><span id="Reservoir-50"><a href="#Reservoir-50"><span class="linenos">50</span></a><span class="sd">    :param np.ndarray permeability_points: points defining the reservoir permeability</span>
-</span><span id="Reservoir-51"><a href="#Reservoir-51"><span class="linenos">51</span></a><span class="sd">    :param np.ndarray permeability_field: permeability field at the points</span>
-</span><span id="Reservoir-52"><a href="#Reservoir-52"><span class="linenos">52</span></a><span class="sd">    :param np.ndarray pressure_points: points defining the reservoir pressure</span>
-</span><span id="Reservoir-53"><a href="#Reservoir-53"><span class="linenos">53</span></a><span class="sd">    :param np.ndarray pressure_field: pressure values at respective points</span>
-</span><span id="Reservoir-54"><a href="#Reservoir-54"><span class="linenos">54</span></a><span class="sd">    :param np.ndarray temperature_points: points defining the reservoir temperature</span>
-</span><span id="Reservoir-55"><a href="#Reservoir-55"><span class="linenos">55</span></a><span class="sd">    :param np.ndarray temperature_field: temperature values at respective points</span>
-</span><span id="Reservoir-56"><a href="#Reservoir-56"><span class="linenos">56</span></a><span class="sd">    &quot;&quot;&quot;</span>
-</span><span id="Reservoir-57"><a href="#Reservoir-57"><span class="linenos">57</span></a>
-</span><span id="Reservoir-58"><a href="#Reservoir-58"><span class="linenos">58</span></a>    <span class="n">outline_points</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">tuple</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">float</span><span class="p">]]</span>
-</span><span id="Reservoir-59"><a href="#Reservoir-59"><span class="linenos">59</span></a>    <span class="n">depth_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-60"><a href="#Reservoir-60"><span class="linenos">60</span></a>    <span class="n">depth_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-61"><a href="#Reservoir-61"><span class="linenos">61</span></a>    <span class="n">thickness_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-62"><a href="#Reservoir-62"><span class="linenos">62</span></a>    <span class="n">thickness_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-63"><a href="#Reservoir-63"><span class="linenos">63</span></a>    <span class="n">porosity_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-64"><a href="#Reservoir-64"><span class="linenos">64</span></a>    <span class="n">porosity_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-65"><a href="#Reservoir-65"><span class="linenos">65</span></a>    <span class="n">permeability_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-66"><a href="#Reservoir-66"><span class="linenos">66</span></a>    <span class="n">permeability_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-67"><a href="#Reservoir-67"><span class="linenos">67</span></a>    <span class="n">pressure_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-68"><a href="#Reservoir-68"><span class="linenos">68</span></a>    <span class="n">pressure_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-69"><a href="#Reservoir-69"><span class="linenos">69</span></a>    <span class="n">temperature_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-70"><a href="#Reservoir-70"><span class="linenos">70</span></a>    <span class="n">temperature_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span><span id="Reservoir-71"><a href="#Reservoir-71"><span class="linenos">71</span></a>
-</span><span id="Reservoir-72"><a href="#Reservoir-72"><span class="linenos">72</span></a>    <span class="nd">@property</span>
-</span><span id="Reservoir-73"><a href="#Reservoir-73"><span class="linenos">73</span></a>    <span class="k">def</span> <span class="nf">outline_polygon</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Polygon</span><span class="p">:</span>
-</span><span id="Reservoir-74"><a href="#Reservoir-74"><span class="linenos">74</span></a>        <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="o">*</span><span class="n">point</span><span class="p">)</span> <span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">points</span><span class="p">]</span>
-</span><span id="Reservoir-75"><a href="#Reservoir-75"><span class="linenos">75</span></a>        <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># close the polygon</span>
-</span><span id="Reservoir-76"><a href="#Reservoir-76"><span class="linenos">76</span></a>        <span class="k">return</span> <span class="n">Polygon</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Reservoir-31"><a href="#Reservoir-31"><span class="linenos">31</span></a><span class="nd">@dataclass</span>
+</span><span id="Reservoir-32"><a href="#Reservoir-32"><span class="linenos">32</span></a><span class="k">class</span> <span class="nc">Reservoir</span><span class="p">:</span>
+</span><span id="Reservoir-33"><a href="#Reservoir-33"><span class="linenos">33</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Reservoir-34"><a href="#Reservoir-34"><span class="linenos">34</span></a><span class="sd">    Class describing geometry &amp; material properties for a single reservoir.</span>
+</span><span id="Reservoir-35"><a href="#Reservoir-35"><span class="linenos">35</span></a>
+</span><span id="Reservoir-36"><a href="#Reservoir-36"><span class="linenos">36</span></a><span class="sd">    1. `*_points` params are the coordinates of the points in the reservoir, e.g.</span>
+</span><span id="Reservoir-37"><a href="#Reservoir-37"><span class="linenos">37</span></a><span class="sd">        `np.array([[x1, y1], [x2, y2], ...])`</span>
+</span><span id="Reservoir-38"><a href="#Reservoir-38"><span class="linenos">38</span></a><span class="sd">    2. `*_field` params are the values of the field at the points, e.g.</span>
+</span><span id="Reservoir-39"><a href="#Reservoir-39"><span class="linenos">39</span></a><span class="sd">        `np.array([val1, val2, ...])`</span>
+</span><span id="Reservoir-40"><a href="#Reservoir-40"><span class="linenos">40</span></a><span class="sd">    3. These values are then interpolated for the entire reservoir area.</span>
+</span><span id="Reservoir-41"><a href="#Reservoir-41"><span class="linenos">41</span></a>
+</span><span id="Reservoir-42"><a href="#Reservoir-42"><span class="linenos">42</span></a><span class="sd">    :param list[tuple[float, float]] outline_points: points defining the reservoir outline. DO NOT repeat the first point at the end of the list.</span>
+</span><span id="Reservoir-43"><a href="#Reservoir-43"><span class="linenos">43</span></a><span class="sd">    :param np.ndarray depth_points: points defining the reservoir depth (distance from surface to bottom)</span>
+</span><span id="Reservoir-44"><a href="#Reservoir-44"><span class="linenos">44</span></a><span class="sd">    :param np.ndarray depth_field: depth field at the points</span>
+</span><span id="Reservoir-45"><a href="#Reservoir-45"><span class="linenos">45</span></a><span class="sd">    :param np.ndarray thickness_points: points defining the reservoir thickness (distance to top from depth)</span>
+</span><span id="Reservoir-46"><a href="#Reservoir-46"><span class="linenos">46</span></a><span class="sd">    :param np.ndarray thickness_field: thickness values at respective points</span>
+</span><span id="Reservoir-47"><a href="#Reservoir-47"><span class="linenos">47</span></a><span class="sd">    :param np.ndarray porosity_points: points defining the reservoir porosity</span>
+</span><span id="Reservoir-48"><a href="#Reservoir-48"><span class="linenos">48</span></a><span class="sd">    :param np.ndarray porosity_field: porosity values at respective points</span>
+</span><span id="Reservoir-49"><a href="#Reservoir-49"><span class="linenos">49</span></a><span class="sd">    :param np.ndarray permeability_points: points defining the reservoir permeability</span>
+</span><span id="Reservoir-50"><a href="#Reservoir-50"><span class="linenos">50</span></a><span class="sd">    :param np.ndarray permeability_field: permeability field at the points</span>
+</span><span id="Reservoir-51"><a href="#Reservoir-51"><span class="linenos">51</span></a><span class="sd">    :param np.ndarray pressure_points: points defining the reservoir pressure</span>
+</span><span id="Reservoir-52"><a href="#Reservoir-52"><span class="linenos">52</span></a><span class="sd">    :param np.ndarray pressure_field: pressure values at respective points</span>
+</span><span id="Reservoir-53"><a href="#Reservoir-53"><span class="linenos">53</span></a><span class="sd">    :param np.ndarray temperature_points: points defining the reservoir temperature</span>
+</span><span id="Reservoir-54"><a href="#Reservoir-54"><span class="linenos">54</span></a><span class="sd">    :param np.ndarray temperature_field: temperature values at respective points</span>
+</span><span id="Reservoir-55"><a href="#Reservoir-55"><span class="linenos">55</span></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="Reservoir-56"><a href="#Reservoir-56"><span class="linenos">56</span></a>
+</span><span id="Reservoir-57"><a href="#Reservoir-57"><span class="linenos">57</span></a>    <span class="n">outline_points</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">tuple</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">float</span><span class="p">]]</span>
+</span><span id="Reservoir-58"><a href="#Reservoir-58"><span class="linenos">58</span></a>    <span class="n">depth_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-59"><a href="#Reservoir-59"><span class="linenos">59</span></a>    <span class="n">depth_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-60"><a href="#Reservoir-60"><span class="linenos">60</span></a>    <span class="n">thickness_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-61"><a href="#Reservoir-61"><span class="linenos">61</span></a>    <span class="n">thickness_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-62"><a href="#Reservoir-62"><span class="linenos">62</span></a>    <span class="n">porosity_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-63"><a href="#Reservoir-63"><span class="linenos">63</span></a>    <span class="n">porosity_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-64"><a href="#Reservoir-64"><span class="linenos">64</span></a>    <span class="n">permeability_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-65"><a href="#Reservoir-65"><span class="linenos">65</span></a>    <span class="n">permeability_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-66"><a href="#Reservoir-66"><span class="linenos">66</span></a>    <span class="n">pressure_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-67"><a href="#Reservoir-67"><span class="linenos">67</span></a>    <span class="n">pressure_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-68"><a href="#Reservoir-68"><span class="linenos">68</span></a>    <span class="n">temperature_points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-69"><a href="#Reservoir-69"><span class="linenos">69</span></a>    <span class="n">temperature_field</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+</span><span id="Reservoir-70"><a href="#Reservoir-70"><span class="linenos">70</span></a>
+</span><span id="Reservoir-71"><a href="#Reservoir-71"><span class="linenos">71</span></a>    <span class="nd">@property</span>
+</span><span id="Reservoir-72"><a href="#Reservoir-72"><span class="linenos">72</span></a>    <span class="k">def</span> <span class="nf">outline_polygon</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Polygon</span><span class="p">:</span>
+</span><span id="Reservoir-73"><a href="#Reservoir-73"><span class="linenos">73</span></a>        <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="o">*</span><span class="n">point</span><span class="p">)</span> <span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">outline_points</span><span class="p">]</span>
+</span><span id="Reservoir-74"><a href="#Reservoir-74"><span class="linenos">74</span></a>        <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># close the polygon</span>
+</span><span id="Reservoir-75"><a href="#Reservoir-75"><span class="linenos">75</span></a>        <span class="k">return</span> <span class="n">Polygon</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
 </span></pre></div>
 
 
@@ -421,11 +429,11 @@ in natural gas and CCS reservoirs. Examples of how Flow2Quake is used include:</
 
     </div>
     <a class="headerlink" href="#Reservoir.outline_polygon"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Reservoir.outline_polygon-72"><a href="#Reservoir.outline_polygon-72"><span class="linenos">72</span></a>    <span class="nd">@property</span>
-</span><span id="Reservoir.outline_polygon-73"><a href="#Reservoir.outline_polygon-73"><span class="linenos">73</span></a>    <span class="k">def</span> <span class="nf">outline_polygon</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Polygon</span><span class="p">:</span>
-</span><span id="Reservoir.outline_polygon-74"><a href="#Reservoir.outline_polygon-74"><span class="linenos">74</span></a>        <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="o">*</span><span class="n">point</span><span class="p">)</span> <span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">points</span><span class="p">]</span>
-</span><span id="Reservoir.outline_polygon-75"><a href="#Reservoir.outline_polygon-75"><span class="linenos">75</span></a>        <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># close the polygon</span>
-</span><span id="Reservoir.outline_polygon-76"><a href="#Reservoir.outline_polygon-76"><span class="linenos">76</span></a>        <span class="k">return</span> <span class="n">Polygon</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Reservoir.outline_polygon-71"><a href="#Reservoir.outline_polygon-71"><span class="linenos">71</span></a>    <span class="nd">@property</span>
+</span><span id="Reservoir.outline_polygon-72"><a href="#Reservoir.outline_polygon-72"><span class="linenos">72</span></a>    <span class="k">def</span> <span class="nf">outline_polygon</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Polygon</span><span class="p">:</span>
+</span><span id="Reservoir.outline_polygon-73"><a href="#Reservoir.outline_polygon-73"><span class="linenos">73</span></a>        <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="o">*</span><span class="n">point</span><span class="p">)</span> <span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">outline_points</span><span class="p">]</span>
+</span><span id="Reservoir.outline_polygon-74"><a href="#Reservoir.outline_polygon-74"><span class="linenos">74</span></a>        <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># close the polygon</span>
+</span><span id="Reservoir.outline_polygon-75"><a href="#Reservoir.outline_polygon-75"><span class="linenos">75</span></a>        <span class="k">return</span> <span class="n">Polygon</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
 </span></pre></div>
 
 
